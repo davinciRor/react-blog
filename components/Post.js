@@ -28,16 +28,7 @@ Post.defaultProps = {
     author: 'Default',
     created_at: '01-01-2017',
     updated_at: '01-01-2017'
-  },
-  image: {
-    style: {
-      width: '100px',
-      height: '100px'
-    },
-    src: 'https://image.shutterstock.com/z/stock-vector-grunge-rubber-stamp-with-text-default-vector-illustration-208383556.jpg',
-    alt: 'Default'
-  },
-  text: 'DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT'
+  }
 };
 
 Post.propTypes = {

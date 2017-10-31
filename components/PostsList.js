@@ -20,18 +20,6 @@ const PostsList = ({ blogPosts }) => {
 };
 
 PostsList.defaultProps = {
-  blogPosts: [
-    {
-      metadata: {
-        author: 'Default',
-        created_at: '01-01-2017',
-        updated_at: '01-01-2017'
-      }
-    }
-  ]
-};
-
-PostsList.defaultProps = {
   blogPosts: PropTypes.array
 };
 
