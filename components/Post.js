@@ -10,7 +10,7 @@ const Post = ({ image, text, metadata }) => {
     {},
     React.createElement(
       Image,
-      { image: image }
+      image
     ),
     React.createElement(TextSpan, { text: text }),
     DOM.ul(

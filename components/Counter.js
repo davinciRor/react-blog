@@ -11,8 +11,6 @@ class Counter extends React.Component {
   }
 
   handleClick() {
-    alert('OLOOLO');
-    console.log('Hell');
     this.setState({count: this.state.count + 1});
   }
 
