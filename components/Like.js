@@ -3,7 +3,7 @@ import DOM from 'react-dom-factories';
 import PropTypes from 'prop-types';
 import bind from '_';
 
-class Counter extends React.Component {
+class Like extends React.Component {
   constructor(props) {
     super(props);
     this.state = { count: props.count };
@@ -24,12 +24,12 @@ class Counter extends React.Component {
   }
 }
 
-Counter.defaultProps = {
-  count: 0
+Like.defaultProps = {
+  likes: 0
 };
 
-Counter.propsType = {
-  count: PropTypes.number
+Like.propsType = {
+  likes: PropTypes.number
 };
 
-export default Counter;
+export default Like;

@@ -4,15 +4,19 @@ import PropTypes from 'prop-types';
 import Post from './Post'
 import _ from 'lodash';
 
-const PostsList = ({ blogPosts }) => {
+const PostsList = ({handleLikeClick, posts }) => {
   return DOM.ul(
     null,
     _.map(
-      blogPosts,
+      posts,
       (post) => {
-        return DOM.li({ key: post.toString() } , React.createElement(
+        return DOM.li({ key: post.id } , React.createElement(
           Post,
-          post
+          {
+            ...post,
+            handleLikeClick: handleLikeClick,
+            id: post.id
+          }
         ));
       }
     )
