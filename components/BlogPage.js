@@ -22,7 +22,8 @@ class BlogPage extends React.Component {
 
   handleLikeClick(id) {
     const newPosts = [];
-    _.each(this.state.posts, (post) => {
+    const tempPosts = [...this.state.posts];
+    _.each(tempPosts, (post) => {
       if(post.id === id) {
       post.likes = post.likes + 1;
     }
